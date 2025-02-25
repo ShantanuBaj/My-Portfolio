@@ -13,3 +13,8 @@ with col2:
 manage complex data, optimize processes, and ensure high-quality client and employee support. Adept at collaborating with
 cross-functional teams to drive data-driven decision-making and process improvements."""
     st.info(content)
+
+content2= """
+Below you can find some of the apps I have built in Python. Feel free to contact me!
+"""
+st.write(content2)
