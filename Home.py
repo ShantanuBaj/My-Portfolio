@@ -3,7 +3,7 @@ import pandas
 import os
 
 current_dir = os.path.dirname(__file__)
-image_path = os.path.join(current_dir, "stadium1.png")
+image_path = os.path.join(current_dir, "stadium1.jpg")
 
 st.set_page_config(layout="wide")
 
@@ -11,7 +11,10 @@ col1, col2= st.columns(2)
 
 
 with col1:
-    st.image("stadium1.jpg", width=300)
+    if os.path.exists(image_path):
+        st.image(image_path, width=300)
+    else:
+        st.error(f"Image not found: {image_path}")
 
 with col2:
     st.title("Shantanu Bajpai")
